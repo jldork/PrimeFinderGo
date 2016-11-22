@@ -1,9 +1,6 @@
 package PrimeGo
 
-import (
-	"fmt"
-	"math"
-)
+import "math"
 
 func FindPrime(n int) int {
 	var prime int
@@ -13,11 +10,6 @@ func FindPrime(n int) int {
 			counter++
 			prime = i
 		}
-		fmt.Println("Check if prime!")
-		fmt.Println(i, IsPrime(i))
-
-		fmt.Println("Number of primes: ", counter)
-		fmt.Println("Latest prime: ", prime)
 	}
 
 	return prime
